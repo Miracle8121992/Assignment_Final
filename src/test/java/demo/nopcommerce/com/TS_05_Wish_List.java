@@ -42,7 +42,9 @@ public class TS_05_Wish_List extends BaseTest {
 		loginAccount("Cuongtest133@gmail.com","abc124");
 		homePage.clickToProduct();
 		wishList.clickToWishListButton();
-		//Assert.assertTrue(wishList.isAddToWishListSuccessMessage("The product has been added to your wishlist"));
+		Assert.assertTrue(wishList.isAddToWishListSuccessMessage("The product has been added to your wishlist"));
+		wishList.clickToCloseMessage();
+		sleepInSeconds(2);
 		header.clickToWishListButton();
 		Assert.assertTrue(wishList.isProductAddToWishList("Apple MacBook Pro 13-inch"));
 	}

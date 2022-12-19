@@ -28,7 +28,7 @@ public class TS_04_Search extends BaseTest {
 	}
 	@AfterClass
 	public void afterClass () {
-		driver.quit();
+		//driver.quit();
 	}
 	
 	@Test

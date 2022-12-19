@@ -21,6 +21,10 @@ public class WishListPageObject extends BasePage {
 		String message = getTextOfElement(driver, WishListPageUI.ADD_TO_WISH_LIST_SUCCESS_MESSAGE);
 		return message.equals(value);
 	}
+	
+	public void clickToCloseMessage() {
+		clickToElement(driver, WishListPageUI.CLOSE_ADD_TO_WISH_LIST_SUCCESS_MESSAGE);
+	}
 	public boolean isProductAddToWishList(String value) {
 		String message = getTextOfElement(driver, WishListPageUI.PRODUCT_NAME);
 		return message.equals(value);

@@ -40,6 +40,14 @@ public class BaseTest {
 		return driver;
 		
 		
+		
+		
 	}
-	
+	public static void sleepInSeconds(long timeout) {
+		try {
+			Thread.sleep(timeout * 1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 }
